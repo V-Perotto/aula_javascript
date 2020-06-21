@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Página</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/button.js"></script>
+</head>
+    <body onload="load()">
+        <h1 id="agradecimento"></h1>
+        <button type="button" onclick="botao()">Clique Aqui</button>
+        <p id="pagina" onclick="redirect()"></p>
+        <!--
+            'this' é para especificar o elemento a ser usado
+        -->  
+        <p id="mouse" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p id="mouse2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        
+        <select onchange="change()">
+            <option value="1">V1</option>
+            <option value="2">V2</option>
+            <option value="3">V3</option>
+        </select>
+    </body> 
+</html>
